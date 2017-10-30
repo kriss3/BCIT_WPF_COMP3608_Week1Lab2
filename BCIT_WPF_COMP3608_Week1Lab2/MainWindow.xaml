@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BCIT_WPF_COMP3608_Week1Lab2"
         mc:Ignorable="d"
-        Title="BCIT - COMP3608 Lab2" Height="300" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="BCIT - COMP3608 Lab2" Height="300" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <DockPanel>
         <ToolBar Name="toolBar1" DockPanel.Dock="Top" Height="26" VerticalAlignment="Top" Width="276">
             <Button x:Name="btnBold" Click="btnBold_Click">Bold</Button>
