@@ -6,7 +6,26 @@
         xmlns:local="clr-namespace:BCIT_WPF_COMP3608_Week1Lab2"
         mc:Ignorable="d"
         Title="BCIT - COMP3608 Lab2" Height="300" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <ToolBar Name="toolBar1" DockPanel.Dock="Top" Height="26" VerticalAlignment="Top" Width="276">
+            <Button x:Name="btnBold" Click="btnBold_Click">Bold</Button>
+            <Button x:Name="btnItalic" Click="btnItalic_Click">Italic</Button>
+            <Slider x:Name="fontSlider" Minimum="2" Maximum="72" Width="100" ValueChanged="fontSlider_ValueChanged"/>
+        </ToolBar>
+        <Grid Name="grid1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Grid.Column="0" Name="listBox1" SelectionChanged="listBox1_SelectionChanged"></ListBox>
+            <GridSplitter Name="gridSplitter1" 
+                          Margin="0" 
+                          Width="5" 
+                          Grid.Column="1" 
+                          HorizontalAlignment="Left"/>
+            <RichTextBox Grid.Column="2" Name="richTextBox1"/>
+        </Grid>
+
+    </DockPanel>
 </Window>
